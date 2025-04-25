@@ -1,148 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    background-color: #f4f4f4;
+    background: #fffafc;
+    color: #333;
   }
   
   header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
+    background: #f7d6e0;
+    padding: 20px;
     text-align: center;
   }
-h1 {
-  font-size: 24px;
-  margin: 0;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-  background-color: white;
-}
-
-h2 {
-  font-size: 32px;
-  text-align: center;
-}
-
-h3 {
-  font-size: 24px;
-}
-
-ul {
-  padding: 0;
-}
-
-ul li {
-  margin: 5px 0;
-}
-
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  position: relative;
-  bottom: 0;
-  width: 100%;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
-}
-
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-/* Formularios */
-form {
-  margin-top: 20px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-input[type="submit"] {
-  background-color: #333;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-input[type="submit"]:hover {
-  background-color: #555;
-}
-
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 20px;
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
   }
-
-  h2 {
-    font-size: 24px;
+  
+  nav a {
+    text-decoration: none;
+    color: #7b2c52;
+    font-weight: bold;
   }
-
-  h3 {
-    font-size: 20px;
+  
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
   }
-
-  nav ul li {
-    display: block;
-    margin-bottom: 10px;
+  
+  footer {
     text-align: center;
+    padding: 15px;
+    background: #fce4ec;
+    margin-top: 30px;
   }
-
+  
   .galeria {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .galeria img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   }
 
-  .galeria img {
-    width: 100%;
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .logo {
+    width: 200px;
     height: auto;
   }
-
-  form {
-    display: block;
-    width: 100%;
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+  }
+  
+  header nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
   }
 
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-}
-
-@media screen and (max-width: 480px) {
+@media (max-width: 850px) {
   h2 {
     font-size: 20px;
   }
@@ -173,3 +116,8 @@ input[type="submit"]:hover {
     padding: 12px;
   }
 }
+@media (max-width:500px){
+    .desplegable{
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;}}
